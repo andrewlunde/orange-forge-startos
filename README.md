@@ -8,7 +8,7 @@
 
 ## Dependencies
 
-Prior to building the `btcshell` package, it's essential to configure your build environment for StartOS services. You can find instructions on how to set up the appropriate build environment in the [Developer Docs](https://docs.start9.com/latest/developer-docs/packaging).
+Prior to building the `orange-forge` package, it's essential to configure your build environment for StartOS services. You can find instructions on how to set up the appropriate build environment in the [Developer Docs](https://docs.start9.com/latest/developer-docs/packaging).
 
 - [docker](https://docs.docker.com/get-docker)
 - [docker-buildx](https://docs.docker.com/buildx/working-with-buildx/)
@@ -22,8 +22,8 @@ Prior to building the `btcshell` package, it's essential to configure your build
 Clone the **LND Shell** package repository locally.
 
 ```
-git clone https://github.com/horologger/btcshell-orange-startos.git
-cd btcshell-orange-startos
+git clone https://github.com/andrewlunde/orange-forge-startos.git
+cd orange-forge-startos
 ```
 
 ## Building
@@ -58,7 +58,7 @@ start-cli auth login
 make install
 ```
 
-**Tip:** You can also install the `btcshell.s9pk` by sideloading it under the **StartOS > System > Sideload a Service** section.
+**Tip:** You can also install the `orange-forge.s9pk` by sideloading it under the **StartOS > System > Sideload a Service** section.
 
 ## Verify Install
 
