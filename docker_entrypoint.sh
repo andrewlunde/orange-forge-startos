@@ -26,8 +26,8 @@ fi
 # echo $FNOS
 # echo $FNARCH
 
-export BTC_RPC_HOST="bitcoind.embassy"
-export BTC_RPC_PORT=8332
+export BTC_RPC_HOST="bitcoind-testnet.embassy"
+export BTC_RPC_PORT=48332
 
 echo "BTC_RPC_HOST:" $BTC_RPC_HOST
 echo "BTC_RPC_PORT:" $BTC_RPC_PORT
@@ -75,6 +75,7 @@ export APP_USER=$(yq e ".user" /data/start9/config.yaml)
 export APP_PASSWORD=$(yq e ".password" /data/start9/config.yaml)
 export BTC_RPC_USER=$(yq e '.bitcoind-user' /data/start9/config.yaml)
 export BTC_RPC_PASSWORD=$(yq e '.bitcoind-password' /data/start9/config.yaml)
+export BTC_RPC_NETWORK="testnet"
 
 echo APP_USER = $APP_USER
 echo APP_PASSWORD = $APP_PASSWORD
