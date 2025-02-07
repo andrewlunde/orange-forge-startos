@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="terminal-orange.png" alt="Project Logo" width="21%">
+  <img src="anvil.png" alt="Project Logo" width="21%">
 </p>
 
 # LND Shell for StartOS
