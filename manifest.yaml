@@ -60,9 +60,23 @@ interfaces:
     protocols:
       - tcp
       - http
+  check:
+    name: Orange Check
+    description: Emulating NIP-05 for now
+    tor-config:
+      port-mapping:
+        80: "8081"
+    lan-config:
+      443:
+        ssl: true
+        internal: 8081
+    ui: false
+    protocols:
+      - tcp
+      - http
 dependencies:
   bitcoind-testnet:
-    version: ">=27.1.0 <28.0.0"
+    version: ">=27.1.0 <29.0.0"
     description: Orange Forge works with your Bitcoin Core Testnet4
     requirement:
       type: "required"
